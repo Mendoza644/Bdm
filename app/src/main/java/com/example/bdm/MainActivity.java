@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         spinner.setOnItemClickListener((AdapterView.OnItemClickListener) this);
 
-
+        /*estoy llenando el spinner*/
         artistAdapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, bd);
         artistAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //Cargo el spinner con los datos
