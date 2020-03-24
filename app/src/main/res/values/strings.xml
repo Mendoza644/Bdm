@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Bdm</string>
+
+    <string-array name="Taller2">
+    <item>Album</item>
+    <item>Artist</item>
+    <item>Track</item>
+    </string-array>
 </resources>

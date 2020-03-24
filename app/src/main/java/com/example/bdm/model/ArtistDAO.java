@@ -2,8 +2,10 @@ package com.example.bdm.model;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 import java.util.List;
 
@@ -13,5 +15,11 @@ public interface ArtistDAO {
     void createArtist (artist artist);
 
     @Query("SELECT * FROM  ARTIST")
-    LiveData<List<artist>> getAllartists();
+    List<artist> getAllartists();
+
+    @Update
+    void update(artist artist);
+
+    @Delete
+    void delete(artist artist);
 }
